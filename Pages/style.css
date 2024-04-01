@@ -1,0 +1,55 @@
+:root {
+    font-family: "Poppins", sans-serif;
+    --primary-glass: rgba(71, 71, 121, 0.15);
+    --primary-color: rgb(29, 24, 36);
+    --primary-text: whitesmoke;
+}
+
+html[data-theme="light"] {
+    --primary-glass: rgba(71, 71, 121, 0.15);
+    --primary-color: whitesmoke;
+    --primary-text: rgb(29, 24, 36);
+}
+
+*,
+:before,
+:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    color: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--primary-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-container {
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 0.9rem 1.2rem;
+    background-color: var(--primary-glass);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+}
+
+.debug {
+    border: 2px solid rgb(0, 255, 42);
+}
