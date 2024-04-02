@@ -1,15 +1,20 @@
 :root {
     font-family: "Poppins", sans-serif;
+}
+/* Dark Mode */
+html[data-theme="dark"] {
     --primary-glass: rgba(71, 71, 121, 0.15);
     --primary-color: rgb(29, 24, 36);
-    --primary-text: whitesmoke;
-    --circle-color: rgba(111, 121, 179, 0.479);
+    --primary-text: rgb(230, 230, 239);
+    --circle-color: rgba(355, 63, 96, 0.8);
+   /* --circle-color: rgba(111, 121, 179, 0.479);*/
 }
-
+/* Light Mode */
 html[data-theme="light"] {
     --primary-glass: rgba(71, 71, 121, 0.15);
-    --primary-color: whitesmoke;
+    --primary-color: rgb(230, 230, 239);
     --primary-text: rgb(29, 24, 36);
+    --circle-color: rgba(355, 63, 96, 0.479);
 }
 
 *,
@@ -30,13 +35,13 @@ body {
     background: var(--primary-color);
     color: var(--primary-text);
 }
-
+/* Hyperlink */
 a {
     text-decoration: none;
     color: inherit;
 }
-
-.header-container {
+/* NavBar Container */
+.NavBar-container {
     right: 0;
     left: 0;
     top: 0;
@@ -50,16 +55,16 @@ a {
 .title {
     padding-top: 3rem;
 }
-/* soon to be added stuff for javaScript*/
+/* soon to be added stuff for javaScript */
 .dot {
-    height: 1.4rem;
-    width: 1.4rem;
+    height: 6rem;
+    width: 6rem;
     margin:  0.3rem 0.5rem;
     border-radius: 50rem;
     background-color: var(--circle-color);
     display: inline-block;
 }
-
+/* Debugger Container */
 .debug {
     border: 2px solid rgb(0, 255, 42);
 }
