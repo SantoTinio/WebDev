@@ -51,12 +51,17 @@ a {
     position: fixed;
     overflow: hidden;
 }
+/* These are for the ones with actual content like texts */
+.body-container{
+    text-align: center;
+}
 
 .title {
     padding-top: 3rem;
+    text-align: center
 }
 /* soon to be added stuff for javaScript */
-.dot {
+.balls {
     height: 6rem;
     width: 6rem;
     margin:  0.3rem 0.5rem;
